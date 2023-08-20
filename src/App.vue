@@ -6,7 +6,7 @@
 				<div class="card-body">
 					<form @submit.prevent="submit">
 						<div class="mb-2">
-							<EmojiInput />
+							<EmojiInput v-model="emoji" :options="{ position: 'bottom' }" />
 						</div>
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
